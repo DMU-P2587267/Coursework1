@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<!--<!DOCTYPE html> is used to tell the browser that the page you want it to load is a HTML page.
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name=”viewport” content=”width=device-width, initial-scale=1.0” />
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <title> Spiderman 2 </title>
+  </head>
+<body>
+
+<!-- The <head> element is placed between the <html> and <body> elements, this contains the metadata of the html as shown in the <head> element above.
+     The <body> consists of the htmls documents such as the headings, paragraphs, images and etc.
+     The <title> element is where you write the name of the html page, which is found in the <head> element.
+-->
+
+  <div>
+  <h1 id="mainheading"> About the Film </h1>
+  </div>
+
+ <!--The <h> element is used here so that it shows what info is going to be shown under it.
+ -->
+
+<div class="container">
+  <a href="castpage.html" class="item">Cast</a>
+  <a href="index.html" class="item">Index</a>
+</div>
+
+<!--I used the <a> element here so that the two pages are linked to this page,so the user can go back and forth between the pages.
+    -->
+
+<h2 id="heading"> Synopsis </h2>
+<p> The story is about a scientist (Doctor Otto Octavius) who loses his wife in a nuclear fusion experiment which went wrong. He then turned into the evil Doctor Octopus by gaining metal arms that are controlled at his will, and he tries building it up again but of course it’s a bad idea, so the hero Spiderman goes in to stop him again while his normal side (Peter Parker) is having his own troubles knowing that his best friend (Harry Osborn) hates his alter ego (Spiderman), and his girlfriend (Mary Jane) being engaged to another man. </p>
+
+<!--The <p> element is used here so that I can put in text such as a summary of the movie and close it, so that it tells the code that it's finished with that element.
+    -->
+
+<h3 id="heading"> Trailer </h3>
+<video width="320" height="240" controls width="25%">
+<source src="vid/trailer1.webm" type="video/webm" />
+<source src="vid/trailer2.ogv" type="video/ogv" />
+<source src="vid/trailer3.mp4" type="video/mp4" />
+<p> Sorry to tell you that your broswer does not support the video element shown on the page. However there is an alternative way of viewing the video, which is by clicking the link below.
+<a href="video/trailer3.mp4">Click here<a></p>
+</video>
+
+<!--The <video> element is put here so that I can include a video on my webpage. There are 3 formats here, so that on the broswer if one format doesn't work, the browser can then use one of that other two that it can use.
+  The <a> element is then used after that, so that if the browser doesn't support either of the formats, they can view it on a seperate tab by clicking on the link given. In other words, this is called the fallback.
+  The video is controled within the <video> element where the size of the video is set and if I wanted the video to play by itself and look, I can use values like loop or autoplay to control it, or just leave it so that the user can choose whether to play the video or not.
+  </video> is put at the end after the video element is put in, so that it tells the browser that the <video> section is done so that elements after that such as for this example the <footer> becomes visible for the user.
+-->
+
+<footer> Website made by Thajeepan Rathiharan P2587267 </footer>
+</body>
+</html>
+
+<!--</body> element is used to close the <body> of the page and </html> is used to tell the browser that's the end of page.
+-->

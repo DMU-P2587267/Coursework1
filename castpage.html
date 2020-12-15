@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name=”viewport” content=”width=device-width, initial-scale=1.0” />
+    <title style=" background-color: grey"> Cast Page </title>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+  </head>
+<body>
+
+  <div>
+  <h1 id="mainheading"> Cast Members </h1>
+  </div>
+
+  <div class="container">
+      <a href="homepage.html" class="item">Home</a>
+      <a href="index.html" class="item">Index</a>
+  </div>
+
+<div class="container2">
+
+<!--In the <div> element i've used a class element so that in the css file I could add features to it, where in this case I used it to create a box shape around the text and image containing the items within it.
+-->
+
+<h2 id="heading"> Tobey Maguire </h2>
+<img src="img/hero.jpg" alt="Tobey Maguire"/>
+
+<!--To include images of the cast members it was done through the <img> element to tell the browser I want to put an image here, and src=" " to tell the browser what picture I want to show from my img folder.
+-->
+
+<p class="text"> American actor and film producer Tobey Maguire is the star of the show, playing the main role of the protagonist Spiderman who fights crimes as well as fighting his alter ego's (Peter Parker) problems.</p>
+<p> Audio Interview </p>
+<audio controls="true">
+
+<!--I've used the control element in for the <audio> to specify to the browser that I want it to be able to play when the user clicks on the play button.
+-->
+
+<source src="aud/malehello.ogg" type="audio/ogg" />
+<source src="aud/malehello2.wav" type="audio/wav" />
+<source src="aud/malehello3.mpeg" type="audio/mpeg" />
+<p> Sorry to tell you that your broswer does not support the audio element shown on the page. However there is an alternative way of hearing the audio, which is by clicking the link below.
+<a href="aud/malehello3.mpeg">Click here<a></p>
+
+<!--Again, I've used 3 formats of the audio files so that if one doesn't work, the browser can use one of the other two formats to play the audio.
+    Like the <video> fallback, <audio> have a fallback as well, so if the browser the user is using doesn't support the formats uploaded onto my site, they can follow the alternative link which i've put below via a hyperlink where the user can open the video in another tab to view it.
+-->
+
+</audio>
+
+<!--Like the <vid> element, I closed the <audio> element with </audio> so that the browser knows that it's the end of the <audio> elements,so that the section beneath it which in this case is the footer will be visible.
+-->
+
+</div>
+
+<div class="container2">
+<h3 id="heading"> Kirsten Dunst </h3>
+<img src="img/lover.jpg" alt="Kirsten Dunst"/>
+
+<!-- I've saved the images of the cast members with their name so that it was easier to type in and for the browser to find in my img folder.
+    Also, as the file format of the image was a jpg, I added .jpg at the end of the src element.
+    The reasoning for the alt is because if the the image doesn't load up for the viewer, the alt atribute gives text in place of the image say what's there.
+-->
+
+<p> The american Kirsten Dunst plays the former girlfriend of Peter Parker (Tobey Maguire) who is moving on with her life as an actress and starts having feelings for another guy she went to college with who is Peter Parkers best friend Harry Osborn (James Franco). </p>
+<p> Audio Interview </p>
+<audio controls="true">
+<source src="aud/femalehello1.ogg" type="audio/ogg" />
+<source src="aud/femalehello2.wav" type="audio/wav" />
+<source src="aud/femalehello3.mpeg" type="audio/mpeg" />
+<p> Sorry to tell you that your broswer does not support the audio element shown on the page. However there is an alternative way of hearing the audio, which is by clicking the link below.
+<a href="aud/femalehello3.mpeg">Click here<a></p>
+</audio>
+</div>
+
+<div class="container2">
+<h4 id="heading"> Alfred Molina </h4>
+<img src="img/villain.jpg" alt="Alfred Molina"/>
+<p class="text"> British actor Alfred Molina plays the role of Doctor Otto Octavius, who later turns into the villain of the movie Otto Octavius as he is on the quest to get redemption from his error in his experiment which lead him to becoming the villain. </p>
+<p> Audio Interview </p>
+<audio controls="true">
+<source src="aud/malehello.ogg" type="audio/ogg" />
+<source src="aud/malehello2.wav" type="audio/wav" />
+<source src="aud/malehello3.mpeg" type="audio/mpeg" />
+<p> Sorry to tell you that your broswer does not support the audio element shown on the page. However there is an alternative way of hearing the audio, which is by clicking the link below.
+<a href="aud/malehello3.mpeg">Click here<a></p>
+</audio>
+</div>
+
+<footer> Website made by Thajeepan Rathiharan P2587267 </footer>
+</body>
+</html>

@@ -1,0 +1,171 @@
+body{
+  height: 100vh;
+  background-image: url("../img/background.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+/* There is only one body element on each page, so there's no need to use a class or id element here.
+   The height is set to vertical height so that the pages can be displayed correctly on both mobile devices and desktops.
+   The background is added via the url link so that it shows the image chosen to be displayeed is relative to the css file. As it's located in the images folder to go up to the css file, it needs to go up one folder so that's why ".." has been used to go up one folder. However, if it was two files below, it would've looked like "../../".
+   I've used background repeat here so that the image is repeated over the height and/ or width of the element using the value repeat to tell the browser I want the image to be repeated as if I didn't do that, there would've been white space at the bottom of the pages.
+   Background size has been used here so that the image I'm using fits onto the element, and I've put the value cover, which makes the image as small as possible maintaining the relationship between the height and width.
+   */
+
+p{
+  color: white;
+  background-color: coral;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  padding: 20px;
+  margin: 5px;
+  font-family: Helvetica, cursive, sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* There's a few <p> elements used within the html, but this <p> is for the "About the film" page.
+   The border has been put in place so that it makes the text more visible as the background image would make it hard to read the text without the text boxes.
+   Therefore i've give the border a black outline to make it stand out from the background image.
+   The color I've given the box was coral because I wanted it to match the colour of the background image.
+   Then I've made the text stand out by having it white as it's visible and the text can be read easily.
+   I've aligned the text in the middle so that there's space around it in the box so that it shows it's not squished inside the box.
+   Font weight determines the thickness of the text by using values like lighter, normal, bold, bolder or number values. I used the number 400 which means normal as I just want to keept it simple.
+   Font family gives choices on what type you wan tyour text to show up as, but not all browsers will be able to show the font you want, so I gave 3 options for the broswer to choose from.
+   */
+
+video{
+  margin: 6%;
+  width: 94%;
+}
+
+/* There's only one video element, so I didn't need to use a class or id element.
+   Margin element was used on the video to create space around the video element by creating a border like structure.
+   The width of the video element was adjusted so that it doesn't take up a lot of space on the page, in other words so that it doesn't look squashed by having a wide width.
+   */
+
+img{
+  width: 15%;
+  float: left;
+  padding 0 10px 0 0;
+}
+
+/* Width was set for the image so that it doesn't expand and/ or take up a lot of space.
+   The float css element was used here so that I could place the image on the left to follow the layout given for the site instead of having it in the middle of the page.
+   The padding element is here for creating space around the element using the values given to shape its borders so that it creates a boox model around the content you use padding on.
+   */
+
+#mainheading{
+  font-size: 1em;
+  color: navy;
+  background-color: grey;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  text-align: center;
+  font-family: Helvetica, Ariel, sans-serif;
+  padding: 20px;
+}
+
+/* id element was used for the mainheading <div> to show that the elements given to it make it unique as this id belongs to this single element on all 3 pages.
+   I used the colour navy for my title and headings because there's already enough red on the page due to the background image, and as there's less blue I used navy blue for the title and headings. A thing to note is that blue is a colour that's known to be a calming colour.
+   The font size tells the browser how big or small the font needs to be, and I've set it to 1em which is the same as 16px, and that is the default browser font size.
+   For the box going around this element I made the background colour grey so that it stands out from the <p> boxes, and made the colour of the text in this id element red so that there's colours of the superheros suit within my work.
+   The text has been aligned to the centre so that it's the first thing the person looks at in that box, especially that it stands out because of the colour of the text which is blue.
+   */
+
+#heading{
+  color: navy;
+  background-color: grey;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  padding: 20px;
+  font-weight: 100px;
+  text-align: center;
+}
+
+/* The text colour was set to navy blue so that it's the same colour as the blue on the superheros costume and this text was put on top of a grey box element so that the names of the actors and actress stood out from the grey.
+   The border style is set to solid so that it stands out, and border style is the shortened form of setting the top, bottom, left and right of the box. So border style is a cheat code to setting the border to form a box, and I've used the value solid so that it defines to the broswer that the border is solid.
+   The text is aligned to the center so it's the first thing the viewer notices when looking at that section of the page.
+   */
+
+#contact{
+  color: aqua;
+  text-align: center;
+}
+
+/* The colour of the text for these links were made a different colour, because originally they were made blue, but it blended in with the blue of the background image so it wouldn't have been visible. Therefore I changed it to aqua.*/
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* I used the flex box element here for the navigation tools so that they stand out and it makes the layout easier to use.
+   The value flex is in display as it tells the browser that this element is going to be the way the element is going to be displayed.
+   The direction of the flex box is row as it goes from left to right.
+   */
+
+
+.item{
+  background-color: orange;
+  font-weight: 100px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  padding: 10px;
+}
+
+/* This it the item element which is found within the container element.
+   I chose the colour orange for the box as it is similar to the colour in the background image in the sky, but darker so it stands out from it.
+   */
+
+footer{
+  color: white;
+  text-align: center;
+  background-color: black;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  padding: 20px;
+}
+
+/* For the footer element I've put it at the bottom of the page with
+   The reasoning for the choice of the footer background colour being black is because it's like the shot at the end of a film or cartoon show where they'd have a black screen with the words the end written on it in white text. Where in this case i've just got that the website was made by me at the end.
+   The border being solid wouldn't matter as it's black and so is the colour of the background colour within the box. It would only look different if I were to have a different value for the border style such as dotted or dashed.
+   */
+
+.container2{
+  margin: 150px auto;
+  width: 50%;
+  height: 50%;
+}
+
+/* This element was put into this <div> so that the image gets resized via the height and width.
+   The margin is then set so that there is space created around the element within the <div>.
+   */
+
+.text{
+  text-align: right;
+  font-family: Helvetica, Ariel, sans-serif;
+}
+
+/* The text-align element is used within this class css element so that they text follows the layout given by having the text on the right side of the image.
+   */
+
+.p{
+  color: white;
+  text-align: center;
+  background-color: black;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  padding: 5px;
+}
+
+/* This was made as the footer at the bottom of the page to follow the layout given, so the border at the bottom was made solid but I don't think it would've made a difference as I set the background colour to be black.
+   The text colour was made white so that it's visible and clear to see.
+   */
